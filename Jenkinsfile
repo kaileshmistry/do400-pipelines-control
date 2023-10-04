@@ -6,6 +6,7 @@ pipeline {
  }
  parameters {
     booleanParam(name: "RUN_FRONTEND_TESTS", defaultValue: true)
+ }
  stages {
     stage('Run Tests') {
       parallel {
@@ -21,7 +22,6 @@ pipeline {
          }
        }
     }
-}
+   }
  }
-}
 }
